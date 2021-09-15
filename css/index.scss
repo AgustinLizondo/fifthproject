@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url(riders.scss);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+$fontColor: #f0f3bd;
+$personalBackground: #02c39a;
+$personalBorder: #00a896;
+$bodyBackground: #028090;
+$personalActive: #05668d;
+
+body {
+  padding: 1rem 6rem;
+  background: $bodyBackground;
+  color: $fontColor;
+}
+header {
+  display: flex;
+  align-items: center;
+  background: $personalActive;
+  border-radius: 32px;
+  padding: 16px;
+  h1 {
+    position: relative;
+    width: 95%;
+  }
+  i {
+    width: 5%;
+    position: relative;
+    font-size: 32px;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.25s;
+    &:hover {
+      transition: all 0.25s;
+      transform: scale(1.25);
+    }
+  }
+}
+.hidden {
+  transition: all 0.25s ease-in;
+  visibility: hidden;
+  opacity: 0;
+}
+.navSection {
+  transition: all 0.25s;
+  display: block;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  a {
+    position: relative;
+    right: 6rem;
+    margin-top: 12px;
+    border-radius: 32px;
+    text-decoration: none;
+    color: $fontColor;
+    font-size: 24px;
+    display: block;
+    background: $personalActive;
+    padding: 12px;
+    text-align: right;
+    border-bottom: thin solid $personalBorder;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.5s;
+      box-shadow: 2px 2px 4px $fontColor;
+    }
+  }
+}

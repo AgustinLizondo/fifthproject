@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+.hiringBox {
+  display: block;
+}
+
+.hiringBox .biker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 4rem;
+  padding: 2rem;
+  border-radius: 32px;
+  border: 2px solid #00a896;
+  font-size: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hiringBox .biker:hover {
+  border: 2px solid #f0f3bd;
+  cursor: pointer;
+}
+
+.hiringBox .biker i {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.hiringBox .biker h3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.hiringBox .biker p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.available {
+  background: #02c39a;
+}
+
+.available:hover {
+  background: #00a896;
+}
+
+.unavailable {
+  background: #05668d;
+}
+
+.unavailable:hover {
+  background: #05668d;
+}

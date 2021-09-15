@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+$fontColor: #f0f3bd;
+$personalBackground: #02c39a;
+$personalBorder: #00a896;
+$bodyBackground: #028090;
+$personalActive: #05668d;
+.hiringBox {
+    display: block;
+    .biker {
+        display: flex;
+        margin: 2rem 4rem;
+        padding: 2rem;
+        border-radius: 32px;
+        border: 2px solid $personalBorder;
+        font-size: 32px;
+        align-items: center;
+        &:hover{
+            border: 2px solid $fontColor;
+            cursor: pointer;
+        }
+        i{
+            flex: 1;
+        }
+        h3{
+            flex: 1;
+        }
+        p{
+            flex: 1;
+            
+        }
+    }
+}
+.available{
+    background: $personalBackground;
+    &:hover{
+        background: $personalBorder;
+    }
+}
+.unavailable{
+    background: $personalActive;
+    &:hover{
+        background: $personalActive;
+    }
+}
